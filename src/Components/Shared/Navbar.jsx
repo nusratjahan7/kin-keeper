@@ -20,10 +20,10 @@ const Navbar = () => {
                 {/* Logo Section */}
                 <Link href="/" className="flex items-center gap-1">
                     <div className="flex h-9 w-9 items-center justify-center rounded-lg">
-                        <Users className="h-6 w-6" />
+                        <Users className="h-6 w-6 text-white" />
                     </div>
-                    <span className="text-2xl font-bold">
-                        Kin<span className="text-[#2aa078]">Keeper</span>
+                    <span className="text-2xl text-white font-bold">
+                        Keen<span className="text-[#2aa078]">Keeper</span>
                     </span>
                 </Link>
 
