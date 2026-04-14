@@ -26,11 +26,10 @@ const Timeline = () => {
     localStorage.setItem('timeline', JSON.stringify(updated))
   }
 
-    // Filter 
+  // Filter entries
   const filteredEntries = filter === 'All' 
     ? entries 
     : entries.filter(entry => entry.type === filter)
-
 
   return (
     <section className="w-11/12 mx-auto">
@@ -44,7 +43,7 @@ const Timeline = () => {
 
       <h1 className="text-2xl font-bold text-white mb-6">Timeline</h1>
 
-         {/* Filter buttons */}
+      {/* Filter buttons */}
       <div className="flex gap-1.5 mb-6">
         <button
           onClick={() => setFilter('All')}
@@ -72,14 +71,13 @@ const Timeline = () => {
         </button>
       </div>
 
-
       {/* Loading state */}
       {!loaded && (
         <p className="text-center text-gray-400 py-12">Loading...</p>
       )}
 
       {/* Empty state */}
-      {loaded && entries.length === 0 && (
+      {loaded && filteredEntries.length === 0 && (
         <div className="rounded-xl bg-base-200  mb-9 px-4 py-10 text-center">
           <p className="text-gray-400 text-sm">No interactions yet.</p>
           <p className="text-gray-500 text-xs mt-1">
@@ -89,9 +87,9 @@ const Timeline = () => {
       )}
 
       {/* Entries list */}
-      {loaded && entries.length > 0 && (
+      {loaded && filteredEntries.length > 0 && (
         <div className="rounded-xl mb-9 bg-base-200 divide-y divide-base-300">
-          {entries.map(entry => {
+          {filteredEntries.map(entry => {
             const { Icon, bg, color } = iconConfig[entry.type] || iconConfig.Call
             return (
               <div key={entry.id} className="flex items-center justify-between p-4">
@@ -119,11 +117,9 @@ const Timeline = () => {
                   Remove
                 </button>
 
-
               </div>
             )
           })}
-
         </div>
       )}
 
