@@ -12,6 +12,7 @@ const iconConfig = {
 const Timeline = () => {
   const [entries, setEntries] = useState([])
   const [loaded, setLoaded] = useState(false)
+  const [filter, setFilter] = useState('All')
 
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem('timeline') || '[]')
@@ -25,6 +26,12 @@ const Timeline = () => {
     localStorage.setItem('timeline', JSON.stringify(updated))
   }
 
+    // Filter 
+  const filteredEntries = filter === 'All' 
+    ? entries 
+    : entries.filter(entry => entry.type === filter)
+
+
   return (
     <section className="w-11/12 mx-auto">
 
@@ -36,6 +43,35 @@ const Timeline = () => {
       </Link>
 
       <h1 className="text-2xl font-bold text-white mb-6">Timeline</h1>
+
+         {/* Filter buttons */}
+      <div className="flex gap-1.5 mb-6">
+        <button
+          onClick={() => setFilter('All')}
+          className={`btn ${filter === 'All' ? 'btn-primary' : 'btn-secondary'}`}
+        >
+          All
+        </button>
+        <button
+          onClick={() => setFilter('Call')}
+          className={`btn ${filter === 'Call' ? 'btn-primary' : 'btn-secondary'}`}
+        >
+          Calls
+        </button>
+        <button
+          onClick={() => setFilter('Text')}
+          className={`btn ${filter === 'Text' ? 'btn-primary' : 'btn-secondary'}`}
+        >
+          Texts
+        </button>
+        <button
+          onClick={() => setFilter('Video')}
+          className={`btn ${filter === 'Video' ? 'btn-primary' : 'btn-secondary'}`}
+        >
+          Videos
+        </button>
+      </div>
+
 
       {/* Loading state */}
       {!loaded && (
