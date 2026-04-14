@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import { Phone, MessageSquare, Video, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
+import { ThreeCircles } from 'react-loader-spinner'
 
 const iconConfig = {
   Call: { Icon: Phone, bg: 'bg-green-50', color: 'text-green-700' },
@@ -47,25 +48,25 @@ const Timeline = () => {
       <div className="flex gap-1.5 mb-6">
         <button
           onClick={() => setFilter('All')}
-          className={`btn ${filter === 'All' ? 'btn-primary' : 'btn-secondary'}`}
+          className={`btn ${filter === 'All' ? 'btn-primary' : 'btn-default'}`}
         >
           All
         </button>
         <button
           onClick={() => setFilter('Call')}
-          className={`btn ${filter === 'Call' ? 'btn-primary' : 'btn-secondary'}`}
+          className={`btn ${filter === 'Call' ? 'btn-primary' : 'btn-default'}`}
         >
           Calls
         </button>
         <button
           onClick={() => setFilter('Text')}
-          className={`btn ${filter === 'Text' ? 'btn-primary' : 'btn-secondary'}`}
+          className={`btn ${filter === 'Text' ? 'btn-primary' : 'btn-default'}`}
         >
           Texts
         </button>
         <button
           onClick={() => setFilter('Video')}
-          className={`btn ${filter === 'Video' ? 'btn-primary' : 'btn-secondary'}`}
+          className={`btn ${filter === 'Video' ? 'btn-primary' : 'btn-default'}`}
         >
           Videos
         </button>
@@ -73,7 +74,17 @@ const Timeline = () => {
 
       {/* Loading state */}
       {!loaded && (
-        <p className="text-center text-gray-400 py-12">Loading...</p>
+        <div className="flex items-center justify-center my-15">
+        <ThreeCircles
+        visible={true}
+        height="100"
+        width="100"
+        color="#4fa94d"
+        ariaLabel="three-circles-loading"
+        wrapperStyle={{}}
+        wrapperClass=""
+      />
+      </div>
       )}
 
       {/* Empty state */}
