@@ -1,18 +1,17 @@
-
-'use client' 
+'use client'
 import { useEffect, useState } from 'react'
 import { Phone, MessageSquare, Video, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 
 const iconConfig = {
-  Call:  { Icon: Phone,         bg: 'bg-green-50',  color: 'text-green-700'  },
-  Text:  { Icon: MessageSquare, bg: 'bg-blue-50',   color: 'text-blue-700'   },
-  Video: { Icon: Video,         bg: 'bg-purple-50', color: 'text-purple-700' },
+  Call: { Icon: Phone, bg: 'bg-green-50', color: 'text-green-700' },
+  Text: { Icon: MessageSquare, bg: 'bg-blue-50', color: 'text-blue-700' },
+  Video: { Icon: Video, bg: 'bg-purple-50', color: 'text-purple-700' },
 }
 
 const Timeline = () => {
   const [entries, setEntries] = useState([])
-  const [loaded, setLoaded]   = useState(false)
+  const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem('timeline') || '[]')
@@ -62,36 +61,36 @@ const Timeline = () => {
               <div key={entry.id} className="flex items-center justify-between p-4">
 
                 <div className='flex items-center gap-4 '>
-                    {/* Icon */}
-                <div className={`w-10 h-10 rounded-full ${bg} flex items-center justify-center shrink-0`}>
-                  <Icon className={`h-5 w-5 ${color}`} strokeWidth={1.8} />
+                  {/* Icon */}
+                  <div className={`w-10 h-10 rounded-full ${bg} flex items-center justify-center shrink-0`}>
+                    <Icon className={`h-5 w-5 ${color}`} strokeWidth={1.8} />
+                  </div>
+
+                  {/* Text */}
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-white">{entry.title}</p>
+                    <p className="text-xs text-gray-400 mt-0.5">
+                      {entry.date} at {entry.time}
+                    </p>
+                  </div>
                 </div>
 
-                {/* Text */}
-                <div className="flex-1">
-                  <p className="text-sm font-medium text-white">{entry.title}</p>
-                  <p className="text-xs text-gray-400 mt-0.5">
-                    {entry.date} at {entry.time}
-                  </p>
-                </div>
-                </div>
-
-                    {/* Delete button */}
+                {/* Delete button */}
                 <button
                   onClick={() => deleteEntry(entry.id)}
-                  className="text-xs text-red-400 hover:text-red-300 transition-colors"
+                  className="text-xs btn btn-soft btn-error"
                 >
                   Remove
                 </button>
-               
+
 
               </div>
             )
           })}
-          
+
         </div>
       )}
-         
+
     </section>
   )
 }
