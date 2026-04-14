@@ -1,4 +1,5 @@
 
+import QuickCheckIn from "@/Components/Timeline/QuickCheckIn";
 import { getFriend } from "@/lib/getFrnd";
 import { ArrowLeft, Mail, Calendar, Target, Clock, Pause, Archive, Trash2, Edit } from "lucide-react";
 import Image from "next/image";
@@ -24,7 +25,7 @@ const FriendsDetails = async ({ params }) => {
         { label: "Next Due Date", value: friend.next_due_date, icon: Calendar, suffix: "" },
     ];
 
-   
+
 
     return (
         <section className="w-11/12 mx-auto">
@@ -105,8 +106,8 @@ const FriendsDetails = async ({ params }) => {
                             Stay in touch every <span className="font-semibold text-primary">{friend.goal} days</span>
                         </p>
                     </div>
-                    {/* Quick Check-In */}
-
+                    {/* Quick Check-In */}                  
+                    <QuickCheckIn friendName={friend.name} friendId={friend.id} />
                 </div>
             </div>
         </section>
