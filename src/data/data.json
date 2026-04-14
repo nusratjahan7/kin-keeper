@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Mitchell",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face",
+    "email": "sarah.mitchell@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met during freshman year at Stanford. We bonded over late-night study sessions and weekend hiking trips in the Bay Area.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 2,
+    "name": "Alex Johnson",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
+    "email": "alex.j@outlook.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["work", "mentor"],
+    "bio": "My former team lead who taught me everything about software architecture. We still grab coffee monthly.",
+    "goal": 7,
+    "next_due_date": "2025-07-15"
+  },
+  {
+    "id": 3,
+    "name": "Priya Sharma",
+    "picture": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face",
+    "email": "priya.sharma@yahoo.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["childhood", "travel buddy"],
+    "bio": "Grew up on the same street. We've traveled to 8 countries together and counting. Planning our next trip to Japan.",
+    "goal": 14,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 4,
+    "name": "Marcus Williams",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face",
+    "email": "marcus.w@proton.me",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["gym", "neighbor"],
+    "bio": "Lives two doors down. We hit the gym together every morning at 6 AM and compete in local 5K runs.",
+    "goal": 7,
+    "next_due_date": "2025-07-14"
+  },
+  {
+    "id": 5,
+    "name": "Emily Chen",
+    "picture": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop&crop=face",
+    "email": "emily.chen@gmail.com",
+    "days_since_contact": 22,
+    "status": "overdue",
+    "tags": ["book club", "creative"],
+    "bio": "Our weekly book club discussions are legendary. She's a published author and always recommends the best reads.",
+    "goal": 10,
+    "next_due_date": "2025-07-12"
+  },
+  {
+    "id": 6,
+    "name": "David Park",
+    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&h=200&fit=crop&crop=face",
+    "email": "dpark@icloud.com",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["college", "roommate"],
+    "bio": "Best roommate I ever had. Now he's a data scientist in Seattle, but we still game online every Friday night.",
+    "goal": 14,
+    "next_due_date": "2025-07-22"
+  },
+  {
+    "id": 7,
+    "name": "Olivia Torres",
+    "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&crop=face",
+    "email": "olivia.t@hotmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["work", "lunch crew"],
+    "bio": "We survived three company reorganizations together. Our lunch breaks kept us sane through it all.",
+    "goal": 14,
+    "next_due_date": "2025-07-19"
+  },
+  {
+    "id": 8,
+    "name": "James Cooper",
+    "picture": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face",
+    "email": "jcooper@gmail.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["family friend", "sports"],
+    "bio": "Our families have been close for over 20 years. He coached my little league team and we still watch every playoff game together.",
+    "goal": 21,
+    "next_due_date": "2025-07-10"
+  }
+]

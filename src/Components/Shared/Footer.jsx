@@ -5,7 +5,7 @@ const Footer = () => {
         <div>
             <footer className="footer footer-horizontal footer-center bg-neutral text-white px-8 py-9">
                 <div>
-                    <h1 className="text-4xl font-bold mb-4 ">KinKeeper</h1>
+                    <h1 className="text-4xl font-bold mb-4 ">KeenKeeper</h1>
                     <p className="text-gray-300">Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                 </div>
                 <nav>
