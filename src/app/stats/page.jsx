@@ -1,5 +1,6 @@
 
 'use client'
+import { AlertTriangle } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { PieChart, Pie, Cell, Legend, Tooltip, ResponsiveContainer } from 'recharts'
 
@@ -36,6 +37,15 @@ const Chart = () => {
     <section className="w-11/12 mx-auto mt-4">
 
       <h1 className="text-3xl font-bold text-white mb-6">Friendship Analytics</h1>
+
+      {loaded && entries.length === 0 && (
+        <div className="text-center flex items-center justify-center  mb-6 min-h-[60vh]">
+          <div>
+             <AlertTriangle className="h-8 w-8 text-yellow-400 inline-flex items-center justify-center mb-3" />
+            <p className='text-white'>No interactions available. Please add interactions to see the data on the chart.</p>
+          </div>
+        </div>
+      )}
 
       {/* Interaction Chart */}
       {loaded && entries.length > 0 && (
