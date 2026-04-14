@@ -41,7 +41,7 @@ const Chart = () => {
       {loaded && entries.length > 0 && (
         <div className="mb-6">
           <h2 className="font-semibold text-lg mb-4 text-white">By Interaction Type</h2>
-          <ResponsiveContainer width="100%" height={300}>
+          <ResponsiveContainer width="100%" height={350}>
             <PieChart>
               <Pie
                 data={[
