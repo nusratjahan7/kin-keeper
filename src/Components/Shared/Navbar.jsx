@@ -15,7 +15,7 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false); 
 
     return (
-        <nav className="sticky top-0 z-50 bg-base-100/70 backdrop-blur-2xl py-3 w-11/12 mx-auto">
+        <nav className="sticky top-0 z-50 bg-base-100/70 backdrop-blur-2xl py-3 px-8">
             <div className="flex justify-between items-center">
                 {/* Logo Section */}
                 <Link href="/" className="flex items-center gap-1">

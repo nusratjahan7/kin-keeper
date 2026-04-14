@@ -1,6 +1,7 @@
 import { getFriend } from "@/lib/getFrnd";
 import { Calendar } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const FriendsCard = () => {
     const friends = getFriend();
@@ -12,7 +13,7 @@ const FriendsCard = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 my-5">
                 {
                     friends.map(friend => (
-                        <div key={friend.id} className="flex flex-col items-center justify-center gap-1 bg-base-200 p-4 rounded-2xl">
+                        <Link  href={`/friend/${friend.id}`} key={friend.id} className="flex flex-col items-center justify-center gap-1 bg-base-200 p-4 rounded-2xl">
                             <div>
                                 <Image src={friend.picture} height={100} width={100} alt={friend.name} className="rounded-full ring-2 ring-base-300 group-hover:ring-neutral transition-all" />
                             </div>
@@ -39,7 +40,7 @@ const FriendsCard = () => {
                                     {friend.status === 'on-track' ? 'On Track' :
                                         friend.status === 'almost due' ? 'Due Soon' : 'Overdue'}
                                 </div>
-                        </div>
+                        </Link>
                     ))
                 }
             </div>
