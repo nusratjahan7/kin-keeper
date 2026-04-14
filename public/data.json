@@ -95,10 +95,10 @@
     "goal": 21,
     "next_due_date": "2025-07-10"
   },
-  {
+   {
     "id": 9,
     "name": "Sophia Turner",
-    "picture": "https://images.unsplash.com/photo-1518709268801-6f77b2b1c206?w=200&h=200&fit=crop&crop=face",
+    "picture": "https://randomuser.me/api/portraits/women/1.jpg",
     "email": "sophia.turner@gmail.com",
     "days_since_contact": 2,
     "status": "on-track",
@@ -110,7 +110,7 @@
   {
     "id": 10,
     "name": "Liam Smith",
-    "picture": "https://images.unsplash.com/photo-1473184710165-123d83125a6e?w=200&h=200&fit=crop&crop=face",
+    "picture": "https://randomuser.me/api/portraits/men/1.jpg",
     "email": "liam.smith@hotmail.com",
     "days_since_contact": 9,
     "status": "almost due",
@@ -122,7 +122,7 @@
   {
     "id": 11,
     "name": "Olivia Davis",
-    "picture": "https://images.unsplash.com/photo-1503931902661-9e96c5b3c042?w=200&h=200&fit=crop&crop=face",
+    "picture": "https://randomuser.me/api/portraits/women/2.jpg",
     "email": "olivia.davis@yahoo.com",
     "days_since_contact": 17,
     "status": "overdue",
@@ -134,7 +134,7 @@
   {
     "id": 12,
     "name": "Ethan Wilson",
-    "picture": "https://images.unsplash.com/photo-1533055481779-e8b78f59f5e2?w=200&h=200&fit=crop&crop=face",
+    "picture": "https://randomuser.me/api/portraits/men/2.jpg",
     "email": "ethan.wilson@aol.com",
     "days_since_contact": 4,
     "status": "on-track",
@@ -146,7 +146,7 @@
   {
     "id": 13,
     "name": "Mia Harris",
-    "picture": "https://images.unsplash.com/photo-1505685292651-87708c9d6a42?w=200&h=200&fit=crop&crop=face",
+    "picture": "https://randomuser.me/api/portraits/women/3.jpg",
     "email": "mia.harris@gmail.com",
     "days_since_contact": 20,
     "status": "overdue",
@@ -158,7 +158,7 @@
   {
     "id": 14,
     "name": "Lucas Brown",
-    "picture": "https://images.unsplash.com/photo-1499367177910-2427c28ad010?w=200&h=200&fit=crop&crop=face",
+    "picture": "https://randomuser.me/api/portraits/men/3.jpg",
     "email": "lucas.brown@gmail.com",
     "days_since_contact": 6,
     "status": "on-track",
@@ -170,7 +170,7 @@
   {
     "id": 15,
     "name": "Charlotte Miller",
-    "picture": "https://images.unsplash.com/photo-1492562083028-d0bc4fa0479f?w=200&h=200&fit=crop&crop=face",
+    "picture": "https://randomuser.me/api/portraits/women/4.jpg",
     "email": "charlotte.miller@outlook.com",
     "days_since_contact": 15,
     "status": "almost due",

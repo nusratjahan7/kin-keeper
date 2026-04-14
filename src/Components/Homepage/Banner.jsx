@@ -1,4 +1,4 @@
-import { getApps, getFriend } from "@/lib/getFrnd";
+import { getFriend } from "@/lib/getFrnd";
 import { Plus } from "lucide-react";
 
 const Banner = () => {
@@ -9,7 +9,7 @@ const Banner = () => {
 
     return (
         <div>
-            <div className="flex flex-col items-center gap-4 text-center my-6 w-11/12 mx-auto">
+            <div className="flex flex-col items-center gap-4 text-center my-20 w-11/12 mx-auto">
                 <h2 className="text-4xl md:text-5xl font-bold text-white">Friends to keep close in your life</h2>
                 <p>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                 <button className="btn btn-neutral flex gap-1.5 items-center justify-center"><Plus /> Add a Friend</button>
