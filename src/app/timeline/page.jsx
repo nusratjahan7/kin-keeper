@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
-import { Phone, MessageSquare, Video, ArrowLeft } from 'lucide-react'
+import { Phone, MessageSquare, Video, ArrowLeft, Filter } from 'lucide-react'
 import Link from 'next/link'
 import { ThreeCircles } from 'react-loader-spinner'
 
@@ -45,7 +45,8 @@ const Timeline = () => {
       <h1 className="text-2xl font-bold text-white mb-6">Timeline</h1>
 
       {/* Filter buttons */}
-      <div className="flex gap-1.5 mb-6">
+      <div className="flex items-center gap-1.5 mb-6">
+        <Filter className="h-4 w-4" />
         <button
           onClick={() => setFilter('All')}
           className={`btn ${filter === 'All' ? 'btn-primary' : 'btn-default'}`}
