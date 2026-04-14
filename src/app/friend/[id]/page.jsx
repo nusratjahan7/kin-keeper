@@ -5,6 +5,17 @@ import { ArrowLeft, Mail, Calendar, Target, Clock, Pause, Archive, Trash2, Edit 
 import Image from "next/image";
 import Link from "next/link";
 
+export async function generateMetadata({ params}){
+    const friends = getFriend();
+    const { id } = await params;
+    const friend = friends.find(friend=> friend.id == id);
+
+    return{
+        title: `${friend.name} - KeenKeeper`,
+        description: friend.bio,
+    }
+}
+
 const FriendsDetails = async ({ params }) => {
     const friends = getFriend();
     const { id } = await params;

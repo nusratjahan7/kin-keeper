@@ -3,6 +3,7 @@ import FriendsCard from "@/Components/Homepage/FriendsCard";
 import { Suspense } from "react";
 import { ThreeCircles } from "react-loader-spinner";
 
+
 export default function Home() {
   return (
     <div>
